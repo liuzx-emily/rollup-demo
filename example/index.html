@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="./bundle.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      <my-component :text="text"></my-component>
+    </div>
+
+    <script>
+      const { eat, name, map, Greeting } = myLib;
+      myLib.eat();
+      const { createApp } = Vue;
+      createApp({
+        components: { myComponent: Greeting },
+        data() {
+          return {
+            text: name,
+          };
+        },
+      }).mount("#app");
+    </script>
+  </body>
+</html>

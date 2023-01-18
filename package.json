@@ -1,0 +1,30 @@
+{
+  "name": "test-rollup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/bundle.iife.js",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c rollup.config.js -w",
+    "build": "rollup -c rollup.config.js"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^24.0.0",
+    "@rollup/plugin-node-resolve": "^15.0.1",
+    "@vue/compiler-sfc": "^3.2.45",
+    "rollup": "^3.9.1",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-serve": "^2.0.2",
+    "rollup-plugin-uglify": "^6.0.4",
+    "rollup-plugin-vue": "^6.0.0",
+    "sass": "^1.57.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21",
+    "lodash-es": "^4.17.21"
+  }
+}
